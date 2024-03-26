@@ -1,560 +1,323 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120988010-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-		  gtag('config', 'UA-120988010-1');
-		</script>
+<!DOCTYPE html>
+<html>
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>CODIS</title>
-        <meta name="description" content="CODIS Tech Technology Optimal Solutions Software Development Web App .Net JS">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="shortcut icon" href="favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-        
-        <!--Google fonts links-->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CODIS</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
 
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<body>
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto: office@codis.tech">office@codis.tech</a>
+      </div>
+      <div class="cta d-none d-md-block">
+        <a href="#icon-boxes" class="scrollto">Get Started</a>
+      </div>
+    </div>
+  </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">CODIS</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services"></a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="efcorebulk.html">EFCore.BulkExtensions</a></li>
+              <li><a href="accounting.html">Accounting System - Kontis</a></li>
+			  <li><a href="custom_apps.html">Custom made Apps</a></li>
+              <li><a href="https://bi.codis.tech/">Business Intelligence (BI)</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
 
+  
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+      <br><br><br><br>
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">IMPROVE YOUR BUSINESS WITH CODIS</h2>
+          <div class="animate__animated animate__fadeInLeft"><img src="assets/img/rocket-01.png" class="img-fluid" alt=""></div>
+          <a href="#icon-boxes" class="btn-get-started animate__animated animate__fadeInUp scrollto">MAKE YOUR BUSSINES GROW FASTER</a>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+ 
 
-        <!--For Plugins external css-->
-        <link rel="stylesheet" href="assets/css/plugins.css" />
-        <link rel="stylesheet" href="assets/css/roboto-webfont.css" />
+  <main id="main">
+    <!-- ======= Icon Boxes Section ======= -->
+    <section id="icon-boxes" class="icon-boxes">
+      <div class="container">
+        <br><br>
 
-        <!--Theme custom css -->
-        <link rel="stylesheet" href="assets/css/style.css">
-
-        <!--Theme Responsive css-->
-        <link rel="stylesheet" href="assets/css/responsive.css" />
-
-        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Sections -->
-        <section id="social" class="social">
-            <div class="container">
-                <!-- Example row of columns -->
-                <div class="row">
-                    <div class="social-wrapper">
-                        <div class="col-md-6">
-                            <div class="social-icon">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <!--a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a-->
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="social-contact">
-                                <a href="#"><i class="fa fa-phone"></i>+387 65/154-721</a>
-                                <a href="#"><i class="fa fa-envelope"></i>office@codis.tech</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- /container -->       
-        </section>
-
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><img src="assets/images/logo.svg" height=55 alt="Logo" /></a>
-                </div>
-                
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#home">Scroll down</a></li>
-                        <!--li class="active"><a href="#home">Home</a></li>
-                        <li><a href="#features">Product</a></li>
-                        <li><a href="#service">Service</a></li>
-                        <li><a href="#price">Price</a></li>
-                        <li><a href="#tools">Tools</a></li>
-                        <li><a href="#contact">Contact</a></li-->
-                    </ul>
-
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-
-        <!--Home page style-->
-        <header id="home" class="home">
-            <div class="overlay-fluid-block">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="home-wrapper">
-                            <div class="col-md-10 col-md-offset-1">
-                                <div class="home-content">
-
-                                    <h1>Improve your Business With CODIS</h1>
-                                    <p>OPTIMISE and enhance your company's procedures with our Software SOLUTIONS.</br>
-                                    By gathering relevant data we can automate many proceses and give rich visual reports to organize better so you can focus on what matters to you.</br>
-                                    Stay in the know, spot trends as they happen, and push your business further.</p>
-                                    
-                                    
-                                    <div class="row">
-                                        <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
-                                            <div class="home-contact">
-                                                <!--div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Email address">
-                                                    <input type="submit" class="form-control" value="Subscribe to feeds">
-
-                                                </div!--><!-- /input-group -->
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>			
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+               <a href="efcorebulk.html">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title">EFCore.BulkExtensions</h4></a>
+              <p class="description">Flagship Library for super fast CRUD Bulk operations on multiple DBs. Also developing several other .NET packages.</p>
             </div>
-        </header>
-
-        <!-- Sections -->
-        <section id="features" class="features sections">
-            <div class="container">
-                <div class="row">
-                    <div class="main_features_content2">
-
-                        <div class="col-sm-6">
-                            <div class="single_features_left text-center">
-                                <img src="assets/images/feature-2.jpg" alt="" />
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 margin-top-60">
-                            <div class="single_features_right ">
-                                <h2>ACCOUNTING SOFTWARE</h2>
-                                <p>Advanced Web based Accounting Information System made with collaboration of experienced developers and accountants that are members of our core team.</br>
-                                - Aplication consists of regular modules and some specific for Investments.</p>
-                                <p>Our MISSION is connecting  all elements of modern business into integradated ERP and enabling smooth control for management.
-                                <!--div class="features_buttom">
-                                    <a href="" class="btn btn-default">Read More</a>
-                                </div-->
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="main_features_content2">
-
-                        <div class="col-sm-6">
-                            <div class="single_features_left text-center">
-                                <img src="assets/images/feature-3.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-sm-6 margin-top-60">
-                            <div class="single_features_right ">
-                                <h2><a href="https://bi.codis.tech">BUSINESS INTELLIGENCE (BI)</a></h2>
-                                <p>BI Solution with tailor-made, fast and agile development.<p>
-                                <p>Dashboards and reports automatization.<p>
-                                <p>Client training and education.<p>
-                                <p>Microsoft Technologies: Power BI, Analysis Services and Power Pivot.<p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
+          </div>
+		  <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <a href="KONTIS.html">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title">ACCOUNTING SOFTWARE</h4></a>
+              <p class="description">KONTIS <br> Advanced Web based Accounting Information System made with collaboration of experienced developers and accountants.</p>
             </div>
-        </section><!--End of Features 2 Section -->
-        <section id="features2" class="features sections">
-            <div class="container">
-                <div class="row">
-                    <div class="main_features_content2">
-
-
-
-                        <div class="col-sm-6 margin-top-60">
-                            <div class="single_features_right ">
-                                <h2>CUSTOM MADE APPLICATION</h2>
-                                <p>* CRM - Customer Relation Management</p>
-                                <p>* Our team have also worked on several financial products for Stock exchanges including MultiLateral Compensation (MLC) that consist of:</p>
-                                <ul>
-                                    <li>- Compensation</li>
-                                    <li>- Cession</li>
-                                    <li>- Factoring</li>
-                                </ul>
-                                <!--div class="features_buttom">
-                                    <a href="" class="btn btn-default">Read More</a>
-                                </div-->
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="single_features_left text-center">
-                                <img src="assets/images/feature-1.jpg" alt="" />
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"data-aos-delay="300">
+            <div class="icon-box">
+              <a href="custom_made_aplications.html">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title">CUSTOM MADE APPLICATION</h4></a>
+              <p class="description">Created for Customer needs.<br> Our team have also worked on several financial products for Stock exchanges including MultiLateral Compensation 
+			    (<a href="https://mlk.blberza.com/">MLC</a>)</p>
             </div>
-        </section><!--End of Features 2 Section -->
-
-
-        <section id="service" class="service2 sections lightbg">
-            <div class="container">
-                <div class="row">
-                    <div class="main_service2">
-                        <div class="head_title text-center">
-                            <h2>SERVICES WE PROVIDE</h2>
-                            <p>Full-Stack development from modeling to deployment.</p>
-                        </div>
-
-                        <div class="service_content">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="single_service2">
-                                    <div class="single_service_left">
-                                        <img src="assets/images/flaticon1.png" alt="" />
-                                    </div>
-                                    <div class="single_service_right">
-                                        <h2>CONSULTING</h2>
-                                        <p>Combining experience with critical and creative thinking we can help overcome most of your problems.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="single_service2">
-                                    <div class="single_service_left">
-                                        <img src="assets/images/flaticon2.png" alt="" />
-                                    </div>
-                                    <div class="single_service_right">
-                                        <h2>REPORTING</h2>
-                                        <p>Using BI (Business Intelligence) to extract relevant info from your data and making understandable reports for management.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="single_service2">
-                                    <div class="single_service_left">
-                                        <img src="assets/images/flaticon3.png" alt="" />
-                                    </div>
-                                    <div class="single_service_right">
-                                        <h2>DEVELOPING</h2>
-                                        <p>Creating custom made programs, procedures and services for all kind of legal companies.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="single_service2">
-                                    <div class="single_service_left">
-                                        <img src="assets/images/flaticon4.png" alt="" />
-                                    </div>
-                                    <div class="single_service_right">
-                                        <h2>WEB & MOB</h2>
-                                        <p>All our solutions are online accessible 24/7 from any location with mobile friendly interface.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+		  <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-box">
+              <a href="https://bi.codis.tech/">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4 class="title">BUSINESS INTELLIGENCE (BI)</h4></a>
+              <p class="description">BI Solution with tailor-made, fast and agile development. Dashboards and reports automatization. Client training and education. </p>
             </div>
-        </section><!-- End of Service2 Section -->		
-
-
-
-        <!-- Sections -->
-        <section id="price" class="price sections">
-
-
-            <div class="head_title text-center">
-                <h1>Affordable Packages</h1>
-                <p>By using Efficient Development and Cutting edge Technology we can create high quality products with reasonable price.</p>
-            </div>
-            <!-- Example row of columns -->
-            <div class="cd-pricing-container cd-has-margins">
-                <div class="cd-pricing-switcher">
-                    <p class="fieldset">
-                        <input type="radio" name="duration-2" value="monthly" id="monthly-2" checked>
-                        <label for="monthly-2">Business</label>
-                        <input type="radio" name="duration-2" value="yearly" id="yearly-2">
-                        <label for="yearly-2">Community</label>
-                        <span class="cd-switch"></span>
-                    </p>
-                </div> <!-- .cd-pricing-switcher -->
-                
-            </div> <!-- .cd-pricing-container -->	
-
-        </section>
-
-        <!-- Sections -->
-        <section id="tools" class="portfolio sections">
-            <div class="container">
-                <div class="head_title text-center">
-                    <h1>Tools we use</h1>
-                    <p>Latest technology enable us to bring our ideas into reality.</br>
-                    Making web based apps for solving different bussines and financial analysis problems.</p>
-                </div>
-
-                <div class="row">
-                    <div class="portfolio-wrapper text-center">
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="community-edition">
-                                <i class="fa fa-book"></i>
-                                <div class="separator"></div>
-                                <h4>Domain knowledge</h4>
-                                <p>For every system first relevant data is collected and then model implemented accordingly. We have great experience in Financial & Accounting area but are always ready for new challenges.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="community-edition">
-                                <i class="fa fa-gears"></i>
-                                <div class="separator"></div>
-                                <h4><a href="https://docs.microsoft.com/en-us/dotnet/core/index">.NET Core</a> - BackEnd</h4>
-                                <p>C# a robus mature language, with new Core version of proven Framework backed by MS .NET Foundation but OS (Open Sourced) with large and ever growing community. Our OS <a href="https://github.com/borisdj/EFCore.BulkExtensions">EFCoreBulk</a> lib. referenced by <a href="https://docs.microsoft.com/en-us/ef/core/extensions/">Microsoft</a>.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="community-edition">
-                                <i class="fa fa-external-link"></i>
-                                <div class="separator"></div>
-                                <h4><a href="https://cxjs.io/">CxJS (React)</a> - Frontend</h4>
-                                <p>State of the art JavaScript Framework with attractive Inteface and modern data visualizations that incorporates two-way binding. Being highly scalable makes it perfect for building large Enterprise apps.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="community-edition">
-                                <i class="fa fa-bug"></i>
-                                <div class="separator"></div>
-                                <h4>VS & WebStorm</h4>
-                                <p><a href="https://www.visualstudio.com/">Visual Studio</a> (version 2017) is one of best IDEs on the market, especially for .NET based systems. For FrontEnd side both <a href="https://code.visualstudio.com/">VS Code</a> and <a href="https://www.jetbrains.com/webstorm/">WebStorm</a> are used with all of its features.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Example row of columns -->
-                <div class="row">
-                    <div class="portfolio-wrapper2 text-center">
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="community-edition">
-                                <i class="fa fa-folder-open"></i>
-                                <div class="separator"></div>
-                                <h4>Data Driven develop</h4>
-                                <p>Systems are constantly being upgraded and adapted to changes. Previous data from apps themselfs are analyzed to find patterns for better process automatisation.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="community-edition">
-                                <i class="fa fa-coffee"></i>
-                                <div class="separator"></div>
-                                <h4>Collab partnership</h4>
-                                <p>To the mutual satisfaction we have close relationship with our partners <a href="http://www.codaxy.com">Codaxy</a> (<a href="https://cxjs.io/">CxJS</a> authors), and clients (like <a href="http://www.blberza.com">BLSE</a>) who provide us feedback used for improvement.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="community-edition">
-                                <i class="fa fa-tree"></i>
-                                <div class="separator"></div>
-                                <h4>Environment friendly</h4>
-                                <p>One of our goals is to reduce carbon footprint for companies by eliminating paper documents and empowering them to use all benefits of fully digital world.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="community-edition">
-                                <i class="fa fa-paper-plane-o"></i>
-                                <div class="separator"></div>
-                                <h4>Vision for Future</h4>
-                                <p>Simplifying complex problems by taking them apart into base components. Using IT for solving each issue, and integrating those solutions with WebAPI services into ERP.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div> <!-- /container -->       
-        </section>
-
-
-        <section id="contact" class="contact sections">
-            <div class="container">
-                <div class="row">
-                    <div class="main_contact whitebackground">
-                        <div class="head_title text-center">
-                            <h2>GET IN TOUCH</h2>
-                            <p>Want to contact us for Hire, Consulting, or just for more info:</p>
-                        </div>
-                        <div class="contact_content">
-                            <div class="col-md-6">
-                                <div class="single_left_contact">
-                                    <form action="#" id="formid">
-
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="name" placeholder="Name" required="">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email" placeholder="Email" required="">
-                                        </div>
-
-
-                                        <div class="form-group">
-                                            <textarea class="form-control" name="message" rows="2" placeholder=""></textarea>
-                                        </div>
-
-                                        <!--div class="center-content">
-                                            <input type="submit" value="" class="btn btn-default">
-                                        </div-->
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="single_right_contact">
-                                
-                                    <div class="contact_address margin-top-4">
-                                        <span>ADDRESS:</span>
-                                        <span>Dr Mladena Stojanovića 4</span>
-                                        <span>78000 Banja Luka, RS, BIH</span> 
-                                        <span class="margin-top-20">TEL: +387 65/154-721</span> 
-                                        <span>EMAIL: office@codis.tech</span> 
-                                    </div>
-
-                                    <!--div class="contact_socail_bookmark">
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                        <a href=""><i class="fa fa-google"></i></a>
-                                    </div-->
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!-- End of Contact Section -->
-
-
-        <section id="footer-menu" class="sections footer-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-menu-wrapper">
-
-                        <div class="col-md-8 col-sm-12 col-xs-12">
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="menu-item">
-                                    <h5>Versions</h5>
-                                    <ul>
-                                        <li>DESKTOP</li>
-                                        <li>MOBILE</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="menu-item">
-                                    <h5>Legal</h5>
-                                    <ul>
-                                        <li>PRIVACY & COOKIES</li>
-                                        <li>TERMS OF USE</li>
-                                        <li>TRADEMARKS</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="menu-item">
-                                    <h5>Information</h5>
-                                    <ul>
-                                        <li>SUPPORT</li>
-                                        <li>DEVELOPERS</li>
-                                        <li>BLOG</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="menu-item">
-                                <h5>Newsletter</h5>
-                                <p>Bring your company's data into focus with Codis.</p>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Email address">
-                                    <input type="submit" class="form-control" value="Subscribe">
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!--Footer-->
-        <footer id="footer" class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-wrapper">
-
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="footer-brand">
-                                <img src="assets/images/logo.svg" height=55 alt="logo" />
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="copyright">
-                                <p>CODIS.tech 2018 All rights reserved.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-
-        <div class="scrollup">
-            <a href="#"><i class="fa fa-chevron-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Icon Boxes Section -->
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>About Us</h2>
+          <p>OPTIMISE and enhance your company's procedures with our Software SOLUTIONS.</br>
+		  By gathering relevant data we can automate many proceses and give rich visual reports to organize better so you can focus on what matters to you. </p>
+        </div>
+        <div class="row content">
+          <div class="col-lg-6">
+            <p> Stay in the know, spot trends as they happen, and push your business further. </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+            <a href="#" class="btn-learn-more">Learn More</a>
+          </div>
         </div>
 
 
-        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
+      </div>
+    </section><!-- End About Us Section -->
 
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/modernizr.js"></script>
-        <script src="assets/js/main.js"></script>
-    </body>
+      <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <div class="container">
+          <div class="row" data-aos="zoom-in">
+            <div class="col-lg-9 text-center text-lg-start">
+              <h3>Improve your Business with <span>CODIS</span></h3>
+              <p> Stay in the know, spot trends as they happen, and push your business further.</p>
+            </div>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle" href="#">Call To Action</a>
+            </div>
+          </div>
+        </div>
+      </section><!-- End Cta Section -->
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services"><br>  <br><br>  
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>SERVICES WE PROVIDE</h2>
+            <p> Full-Stack development from modeling to deployment.</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon-box">
+                <i class="bi bi-card-checklist"></i>
+                <h4><a href="#">CONSULTING</a></h4>
+                <p>Combining experience with critical and creative thinking we can help overcome most of your problems.</p>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box">
+                <i class="bi bi-bar-chart"></i>
+                <h4><a href="#">REPORTING</a></h4>
+                <p>Using BI (Business Intelligence) to extract relevant info from your data and making understandable reports for management.</p>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon-box">
+                <i class="bi bi-binoculars"></i>
+                <h4><a href="#">DEVELOPING</a></h4>
+                <p>Creating custom made programs, procedures and services for various business entities.</p>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon-box">
+                <i class="bi bi-brightness-high"></i>
+                <h4><a href="#">WEB &amp; MOB</a></h4>
+                <p>All our solutions are online accesible 24/7 from any location with mobile friendly interface.</p>
+              </div>
+            </div><br>  <br><br>  
+          </div>
+        </div><br>
+      </section><!-- End Services Section -->
+
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 align-items-stretch position-relative video-box" style="background-image: url(&quot;assets/img/codis.jpg&quot;);" data-aos="fade-right">
+          </div>
+          <div class="col-lg-8 d-flex flex-column justify-content-center align-items-stretch" >
+            <div class="content">
+              <h3>Tools we use </h3>
+              <p> Latest technology enable us to bring our ideas into reality.<br> Making web based apps for solving different bussines and financial analysis problems. </p>
+            </div>
+            <div class="accordion-list">
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> DOMAIN KNOWLEDGE <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p> For every system first relevant data is collected and then model implemented accordingly. We have great experience in Financial &amp; Accounting area but are always ready for new challenges. </p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span>BACKEND - .NET CORE<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p> C# a robus mature language, with new Core version of proven Framework backed by MS .NET Foundation but OS (Open Sourced) with large and ever growing community. Our OS EFCoreBulk lib. referenced by Microsoft. </p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> FRONTEND: BLAZOR and CxJS<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p> State of the art Framework with attractive Interface and modern data visualizations that incorporates two-way binding. Being highly scalable makes it perfect for building large Enterprise apps. </p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>04</span> Visual Studio &amp; VS Code <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                    <p> Visual Studio is one of best IDEs on the market, especially for .NET based systems. For FrontEnd side both VS Code and WebStorm are used with all of its features. </p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-5" class="collapsed"><span>05</span> DATA DRIVEN DEVELOP <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-5" class="collapse" data-bs-parent=".accordion-list">
+                    <p> Systems are constantly being upgraded and adapted to changes. Previous data from apps themselfs are analyzed to find patterns for better process automatisation. </p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-6" class="collapsed"><span>06</span> COLLAB PARTNERSHIP <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-6" class="collapse" data-bs-parent=".accordion-list">
+                    <p> To the mutual satisfaction we have close relationship with our partners, and clients who provide us feedback used for improvement. </p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-7" class="collapsed"><span>07</span> ENVIRONMENT FRIENDLY <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-7" class="collapse" data-bs-parent=".accordion-list">
+                    <p> One of our goals is to reduce carbon footprint for companies by eliminating paper documents and empowering them to use all benefits of fully digital world. </p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-8" class="collapsed"><span>08</span> VISION FOR FUTURE <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-8" class="collapse" data-bs-parent=".accordion-list">
+                    <p> Simplifying complex problems by taking them apart into base components. Using IT for solving each issue, and integrating those solutions with services into Enterprise Software. </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Why Us Section -->
+  
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-links">
+            <div class="swiper-slide"><img src="assets/img/logo-1.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="efcorebulk.html">.NET Libraries</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="KONTIS.html">ACCOUNTING SOFTWARE</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://bi.codis.tech/home">BUSINESS INTELLIGENCE (BI)</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="custom_apps.html">CUSTOM MADE APPLICATION</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              <strong>Email:</strong> <a href="mailto:office@codis.tech" data-toggle="tooltip" aria-hidden="true" class="text-white"> <span>office@codis.tech</span></a><br>
+              <strong>Phone:</strong><a href="call:0038765154721" data-toggle="tooltip" data-placement="bottom" aria-hidden="true"> <span>  +387 65/154-721</span></a>
+              <br><br> Dr Mladena Stojanovića 4 <br> 78000 Banja Luka, RS, BIH<br>
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>WORK WITH US</h3>
+            <p>Improve your Business With CODIS <br> <br> OPTIMISE and enhance your company's procedures with our Software SOLUTIONS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright"> © Copyright <strong><span>CODIS</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
