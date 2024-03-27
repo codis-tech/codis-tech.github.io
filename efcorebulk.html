@@ -84,7 +84,7 @@
                      <div class="box featured3">
                         <h3>STARTER</h3>
                         <h4><sup>$</sup>800<span> / year</span> </br>
-                           <span>or </span><sup style="font-size:16px; color:darkOrange">₿</sup><font style="font-size:21px; color:darkOrange">11</font> <span style="color:dimGray">mBTC</span>
+                           <span>or </span><sup style="font-size:16px; color:darkOrange">₿</sup><font id="bitPriceT1" style="font-size:21px; color:darkOrange">B1</font> <span style="color:dimGray">mBTC</span>
                         </h4>
                         <ul>
                            <li><b>1 - 5 developers</b></li>
@@ -101,7 +101,7 @@
                      <div class="box featured2">
                         <h3>STANDARD</h3>
                         <h4><sup>$</sup>1,400<span> / year</span> </br>
-                           <span>or </span><sup style="font-size:16px; color:darkOrange">₿</sup><font style="font-size:21px; color:darkOrange;">20</font> <span style="color:dimGray">mBTC</span>
+                           <span>or </span><sup style="font-size:16px; color:darkOrange">₿</sup><font id="bitPriceT2" style="font-size:21px; color:darkOrange;">B2</font> <span style="color:dimGray">mBTC</span>
                         </h4>
                         <ul>
                            <li><b>6 - 20 developers</b></li>
@@ -118,7 +118,7 @@
                      <div class="box featured1">
                         <h3>PROFESSIONAL</h3>
                         <h4><sup>$</sup>2,400<span> / year</span> </br>
-                           <span>or </span><sup style="font-size:16px; color:darkOrange">₿</sup><font style="font-size:22px; color:darkOrange">34</font> <span style="color:dimGray">mBTC</span>
+                           <span>or </span><sup style="font-size:16px; color:darkOrange">₿</sup><font id="bitPriceT3" style="font-size:21px; color:darkOrange">B3</font> <span style="color:dimGray">mBTC</span>
                         </h4>
                         <ul>
                            <li><b>21 - 50 developers</b></li>
@@ -135,7 +135,7 @@
                      <div class="box featured">
                         <h3>ENTERPRISE</h3>
                         <h4><sup>$</sup>4,000<span> / year</span> </br>
-                           <span>or </span><sup style="font-size:18px; color:darkOrange">₿</sup><font style="font-size:24px; color:darkOrange">57</font> <span style="color:dimGray">mBTC</span>
+                           <span>or </span><sup style="font-size:16px; color:darkOrange">₿</sup><font id="bitPriceT4" style="font-size:21px; color:darkOrange">B4</font> <span style="color:dimGray">mBTC</span>
                         </h4>
                         <ul>
                            <li><b>&gt; 50 developers</b></li>
@@ -335,4 +335,28 @@
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
    </body>
+   <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var burl = 'https://api.binance.com/api/v3/ticker/price?symbol=';
+    var symbol = 'BTCUSDT';
+    var url = burl + symbol;
+    var request = new XMLHttpRequest();
+    
+    request.open('GET', url, true)
+    request.onload = function() {
+      var str = request.responseText;
+      var strobj = JSON.parse(str);
+	  var price = parseInt(strobj.price, 10);
+	  var priceT1 = parseInt(800 / price * 1000, 10);
+	  var priceT2 = parseInt(1400 / price * 1000, 10);
+	  var priceT3 = parseInt(2400 / price * 1000, 10);
+	  var priceT4 = parseInt(4000 / price * 1000, 10);
+      document.getElementById('bitPriceT1').innerHTML = priceT1;
+	  document.getElementById('bitPriceT2').innerHTML = priceT2;
+	  document.getElementById('bitPriceT3').innerHTML = priceT3;
+	  document.getElementById('bitPriceT4').innerHTML = priceT4;
+    }
+    request.send();
+  });
+  </script>
 </html>
