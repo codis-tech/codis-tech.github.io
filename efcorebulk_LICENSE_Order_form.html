@@ -89,8 +89,6 @@
     </div>
   </section><!-- End About Us Section -->
 
-
-
   </main><!-- End #main -->
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -140,12 +138,19 @@
   <script src="assets/js/main.js"></script>
 </body>
 <script>
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams('queryString');
-  const tier = urlParams.get('tier');
+  var queryString = window.location.search;
+  var urlParams = new URLSearchParams(queryString);
+  var tierParam = urlParams.get('tier');
   document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById('tx').innerHTML = tier;
-    document.getElementById('bulkForm').src += '?usp=pp_url&entry.1534560508=1.+STARTER+(1+-+5+developers)';
+    var entryPAram = '?usp=pp_url&entry.1534560508=';
+    if(tierParam == 1)
+      document.getElementById('bulkForm').src += entryPAram + '1.+STARTER+(1+-+5+developers)';
+    if(tierParam == 2)
+      document.getElementById('bulkForm').src += entryPAram + '2.+STANDARD+(6+-+20+developers)';
+    if(tierParam == 3)
+      document.getElementById('bulkForm').src += entryPAram + '3.+PROFESSIONAL+(21+-+50+developers)';
+    if(tierParam == 4)
+      document.getElementById('bulkForm').src += entryPAram + '4.+ENTERPRISE+(+>+50+developers)'; 
   });
 </script>
 </html>
