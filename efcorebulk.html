@@ -127,7 +127,7 @@
                   <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
                      <div class="box featured3">
                         <h3>STARTER</h3>
-		        <h4><span style="font-size:36px;color:#158C2A;font-weight:600;"><sup>$</sup>800</span><span> / year</span> <br>
+		        <h4><span style="font-size:36px;color:#158C2A;font-weight:600;"><sup>$</sup>1000</span><span> / year</span> <br>
                            <span>or </span><sup style="font-size:16px; color:darkOrange">₿</sup><font id="bitPriceT1" style="font-size:21px; color:darkOrange">B1</font> <span style="color:dimGray">mBTC</span>
                         </h4>
                         <ul>
@@ -144,7 +144,7 @@
                   <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
                      <div class="box featured2">
                         <h3>STANDARD</h3>
-                        <h4><span style="font-size:36px;color:#158C2A;font-weight:600;"><sup>$</sup>1,400</span><span> / year</span> <br>
+                        <h4><span style="font-size:36px;color:#158C2A;font-weight:600;"><sup>$</sup>1,800</span><span> / year</span> <br>
                            <span>or </span><sup style="font-size:16px; color:darkOrange">₿</sup><span id="bitPriceT2" style="font-size:21px; color:darkOrange;font-weight:600;">B2</span> <span style="color:dimGray">mBTC</span></span>
                         </h4>
                         <ul>
@@ -161,7 +161,7 @@
                   <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
                      <div class="box featured1">
                         <h3>PROFESSIONAL</h3>
-                        <h4><font style="color:#158C2A"><sup>$</sup>2,400</font><span> / year</span> <br>
+                        <h4><font style="color:#158C2A"><sup>$</sup>3,000</font><span> / year</span> <br>
                            <span>or </span><sup style="font-size:16px; color:darkOrange">₿</sup><font id="bitPriceT3" style="font-size:21px; color:darkOrange">B3</font> <span style="color:dimGray">mBTC</span>
                         </h4>
                         <ul>
@@ -178,7 +178,7 @@
                   <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
                      <div class="box featured">
                         <h3>ENTERPRISE</h3>
-                        <h4><font style="color:#158C2A"><sup>$</sup>4,000</font><span> / year</span> <br>
+                        <h4><font style="color:#158C2A"><sup>$</sup>4,800</font><span> / year</span> <br>
                            <span>or </span><sup style="font-size:16px; color:darkOrange">₿</sup><font id="bitPriceT4" style="font-size:21px; color:darkOrange">B4</font> <span style="color:dimGray">mBTC</span>
                         </h4>
                         <ul>
@@ -435,10 +435,10 @@
 	      var str = request.responseText;
 	      var strobj = JSON.parse(str);
 		  var price = parseInt(strobj.price, 10);
-		  var priceT1 = parseInt(800 / price * 1000, 10);
-		  var priceT2 = parseInt(1400 / price * 1000, 10);
-		  var priceT3 = parseInt(2400 / price * 1000, 10);
-		  var priceT4 = parseInt(4000 / price * 1000, 10);
+		  var priceT1 = parseInt(1000 / price * 1000, 10);
+		  var priceT2 = parseInt(1800 / price * 1000, 10);
+		  var priceT3 = parseInt(3000 / price * 1000, 10);
+		  var priceT4 = parseInt(4800 / price * 1000, 10);
 	      document.getElementById('bitPriceT1').innerHTML = priceT1;
 		  document.getElementById('bitPriceT2').innerHTML = priceT2;
 		  document.getElementById('bitPriceT3').innerHTML = priceT3;
